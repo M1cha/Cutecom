@@ -1303,7 +1303,7 @@ void QCPPDialogImpl::readData(int fd)
       else
       {
          // also print a newline for \r, and print only one newline for \r\n
-         if ((isprint(*c)) || (*c=='\n') || (*c=='\r'))
+         if ((isprint(*c)) || (*c=='\n') || (*c=='\r') || (*c=='\t'))
          {
             if (*c=='\r')
             {
